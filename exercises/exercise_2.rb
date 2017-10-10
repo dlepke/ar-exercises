@@ -1,4 +1,6 @@
 require_relative '../setup'
+require_relative '../lib/store'
+require_relative '../lib/employee'
 require_relative './exercise_1'
 
 puts "Exercise 2"
