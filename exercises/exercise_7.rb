@@ -12,3 +12,15 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "Please enter a name for your new store: "
+print "> "
+@store_name = gets.chomp
+
+@newstore = Store.new({
+    name: @store_name
+})
+
+@newstore.valid?
+puts @newstore.errors[:name]
+puts @newstore.errors[:annual_revenue]
